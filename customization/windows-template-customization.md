@@ -133,13 +133,13 @@ Manual tasks that can/should be started in the template
     1. Run windows drive cleaner as Administrator.
     2. Enable all the task and run the cleaner
 
- * CCleaner file cleaning
-    1. Install CCleaner free
-    2. Copy the attached ccleaner configuration file in CCleaner program file folder
-    3. Run ccleaner with all option set except "wipe free space" (it will also remove user history and preferences)
-    4. Run ccleaner only with the option "wipe free space".
+ * SDelete from Sysinternals
+    1. Download SDelete from Microsoft (e.g. https://technet.microsoft.com/en-us/library/2009.08.utilityspotlight.aspx)
+    2. Run the following command in terminal to fill drive c: with zeros:
 
-        It will write zeros in all unused space. This will allow you to strip the root.img file later
+           sdelete -z c:
+
+       It will write zeros in all unused space. This will allow you to strip the root.img file later
 
  * TemplateVM stripping
 
